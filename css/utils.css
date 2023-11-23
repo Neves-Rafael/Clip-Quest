@@ -1,0 +1,29 @@
+/* .cursor-dot {
+    height: 5px;
+    width: 5px;
+    background: white;
+}
+
+.cursor-dot-outline {
+    height: 25px;
+    width: 25px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.cursor-dot,
+.cursor-dot-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+} */
+
+/* html */
+
+/*  
+    <div class="cursor-dot"  data-cursor-dot></div>
+    <div class="cursor-dot-outline" data-cursor-outline></div>
+*/
