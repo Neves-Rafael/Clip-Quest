@@ -1,5 +1,4 @@
-import { capture } from "./elements.js";
-
+import { capture, teste } from "./elements.js";
 export class Router {
   routes = {};
 
@@ -15,6 +14,9 @@ export class Router {
       .then((data) => data.text())
       .then((html) => {
         document.getElementById("app").innerHTML = html;
+
+        let videoElement = document.getElementById("video");
+        teste(videoElement);
         capture();
       });
   }

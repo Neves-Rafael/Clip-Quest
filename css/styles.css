@@ -149,7 +149,12 @@ nav {
 .home h2 {
   color: var(--white);
   font-size: 5rem;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  left: 25%;
 }
+
 
 .footer-number p {
   color: var(--white);
@@ -168,6 +173,56 @@ nav {
 }
 
 #geometric {
-    position: fixed;
-    z-index: -9;
+  position: fixed;
+  z-index: 1;
+}
+
+#geometric.left {
+  left: auto;
+  animation: left 1s ease-in-out forwards;
+}
+
+#geometric.right {
+  right: auto;
+  animation: right 1s ease-in-out forwards;
+}
+
+#geometric.leftCenter {
+  left: auto;
+  animation: leftCenter 1s ease-in-out forwards;
+}
+
+#geometric.rightCenter {
+  right: auto;
+  animation: rightCenter 1s ease-in-out forwards;
+}
+
+@keyframes right {
+  100% {
+    transform: translateX(125%) scale(1.5) rotate(360deg);
+  }
+}
+
+@keyframes left {
+  100% {
+    transform: translateX(-125%) scale(1.5) rotate(-360deg);
+  }
+}
+
+@keyframes rightCenter {
+  0% {
+    transform: translateX(125%) scale(1.5) rotate(360deg);
+  }
+  100% {
+    transform: translateX(0%) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes leftCenter {
+  0% {
+    transform: translateX(-125%) scale(1.5) rotate(-360deg);
+  }
+  100% {
+    transform: translateX(0%) scale(1) rotate(0deg);
+  }
 }

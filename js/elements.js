@@ -32,12 +32,66 @@ export function capture() {
   });
 }
 
+
 document.getElementById("app").addEventListener("click", function (event) {
   if (event.target && event.target.id === "voltar") {
     window.history.pushState({}, "", "/");
     const router = new Router();
     router.add("/", "./pages/search.html");
     router.togglePage();
-    // console.log("voltar");
   }
 });
+
+document.getElementById("app").addEventListener("click", function (event) {
+  if (event.target && event.target.id === "geometric") {
+    window.history.pushState({}, "", "/main");
+    const router = new Router();
+    router.add("/main", "./pages/main.html");
+    router.togglePage();
+  }
+});
+
+document.getElementById("app").addEventListener("click", function (event) {
+  const geometric = document.getElementById("geometric");
+  if (event.target && event.target.className === "left") {
+    geometric.classList.add("left");
+
+    if (geometric.classList.contains("right")) {
+      geometric.classList.add("rightCenter");
+      geometric.classList.remove("right");
+    }
+    setTimeout(() => {
+      geometric.classList.remove("rightCenter");
+      geometric.classList.remove("leftCenter");
+    }, 1000);
+  }
+
+  if (event.target && event.target.className === "right") {
+    geometric.classList.add("right");
+
+    if (geometric.classList.contains("left")) {
+      geometric.classList.add("leftCenter");
+      geometric.classList.remove("left");
+    }
+
+    setTimeout(() => {
+      geometric.classList.remove("leftCenter");
+      geometric.classList.remove("rightCenter");
+    }, 1000);
+  }
+});
+
+let videoLocal;
+
+export function teste(videoAqui){
+  if (videoAqui !== null) {
+    videoAqui.src = videoLocal;
+    console.log("srcVideo", videoLocal);
+    console.log("chegou aqui");
+  }
+  console.log(videoAqui)
+}
+
+export function callBackHoister(dataVideo){
+  videoLocal = dataVideo;
+}
