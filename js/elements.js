@@ -32,7 +32,6 @@ export function capture() {
   });
 }
 
-
 document.getElementById("app").addEventListener("click", function (event) {
   if (event.target && event.target.id === "voltar") {
     window.history.pushState({}, "", "/");
@@ -83,15 +82,14 @@ document.getElementById("app").addEventListener("click", function (event) {
 
 let videoLocal;
 
-export function teste(videoAqui){
+export function callBackHoister(dataVideo) {
+  videoLocal = dataVideo;
+}
+export function teste(videoAqui) {
   if (videoAqui !== null) {
     videoAqui.src = videoLocal;
     console.log("srcVideo", videoLocal);
     console.log("chegou aqui");
   }
-  console.log(videoAqui)
-}
-
-export function callBackHoister(dataVideo){
-  videoLocal = dataVideo;
+  console.log(videoAqui);
 }

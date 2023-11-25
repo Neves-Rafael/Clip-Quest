@@ -226,3 +226,9 @@ nav {
     transform: translateX(0%) scale(1) rotate(0deg);
   }
 }
+
+#video {
+
+  max-height: 100vh;
+  object-fit: cover;
+}
