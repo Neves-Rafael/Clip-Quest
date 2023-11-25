@@ -1,12 +1,12 @@
 import * as utils from "./utils.js";
 import { Router } from "./router.js";
 import { callBackHoister } from "./elements.js";
+import { TableView } from "./table.js";
+const tableView = new TableView();
 
 export class Request {
   search(query) {
-    console.log("buscando");
-    console.log(query);
-    fetch(`https://api.pexels.com/v1/search?query=${query}&per_page=3`, {
+    fetch(`https://api.pexels.com/videos/search?query=${query}&per_page=5`, {
       method: "GET",
       headers: {
         Authorization: `${utils.API_KEY_PEXELS}`,
@@ -15,33 +15,22 @@ export class Request {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        this.getVideo(data);
+
         if (data.total_results === 0) {
-          console.log("nenhum resultado encontrado");
           let router = new Router();
+          window.history.pushState({}, "", "/404");
           router.add(404, "./pages/404.html");
           router.togglePage();
+        } else {
+          this.getVideo(data);
         }
       })
       .catch((error) => console.error("Erro:", error));
   }
 
   getVideo(data) {
-    console.log("chegou aqui");
-    const resultData = data.photos[0].src.original;
+    const resultData = data.videos[0].video_files[0].link;
     callBackHoister(resultData);
-    console.log(resultData);
+    tableView.tableContent(data);
   }
-
-
-  // requestSrc(srcVideo) {
-  //   srcVideo =
-  //     "https://images.pexels.com/photos/5696525/pexels-photo-5696525.jpeg";
-  //   let videoElement = document.getElementById("video");
-
-  //   if (videoElement !== null) {
-  //     videoElement.src = srcVideo;
-  //     console.log("srcVideo", srcVideo);
-  //   }
-  // }
 }

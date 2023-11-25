@@ -43,8 +43,8 @@ document.getElementById("app").addEventListener("click", function (event) {
 
 document.getElementById("app").addEventListener("click", function (event) {
   if (event.target && event.target.id === "geometric") {
-    window.history.pushState({}, "", "/main");
     const router = new Router();
+    window.history.pushState({}, "", "/main");
     router.add("/main", "./pages/main.html");
     router.togglePage();
   }
@@ -81,15 +81,21 @@ document.getElementById("app").addEventListener("click", function (event) {
 });
 
 let videoLocal;
-
 export function callBackHoister(dataVideo) {
   videoLocal = dataVideo;
 }
 export function teste(videoAqui) {
   if (videoAqui !== null) {
     videoAqui.src = videoLocal;
-    console.log("srcVideo", videoLocal);
-    console.log("chegou aqui");
   }
-  console.log(videoAqui);
+}
+
+document.getElementById("logo").addEventListener("click", () => {
+  window.history.pushState({}, "", "/");
+});
+
+// Recarregamento lógica
+if (performance.navigation.type === 1) {
+  console.log("A página foi recarregada!!");
+  window.history.pushState({}, "", "/");
 }

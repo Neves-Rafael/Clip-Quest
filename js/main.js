@@ -1,4 +1,6 @@
 import { Router } from "./router.js";
+import "./style.js"
+import "./table.js"
 
 const router = new Router();
 
@@ -52,5 +54,4 @@ window.route = () => router.togglePage();
 //         top: `${posY}px`
 // }, {duration: 500, fill: "forwards"})
 // })
-
 
