@@ -6,10 +6,10 @@ export class Table {
   }
 }
 export class TableView extends Table {
-    constructor(root) {
-      super(root);
-      this.tbody = document.querySelector("table tbody");
-    }
+  constructor(root) {
+    super(root);
+    this.tbody = document.querySelector("table tbody");
+  }
 
   tableContent(data) {
     this.removeTr();
@@ -17,13 +17,14 @@ export class TableView extends Table {
       for (let i = 0; i <= 5; i++) {
         const row = this.createRow();
         row.querySelector(".table a").href = data.videos[i].user.url;
-        row.querySelector(".author p").textContent = `Autor: ${data.videos[i].user.name}`;
+        row.querySelector(
+          ".author p"
+        ).textContent = `Autor: ${data.videos[i].user.name}`;
         this.tbody.append(row);
       }
     } catch (error) {
       console.log(error);
     }
-
   }
 
   createRow() {
@@ -45,8 +46,8 @@ export class TableView extends Table {
   }
 
   removeTr() {
-    const tr = document.querySelector("tr");
-    tr.innerHTML = ``;
+    const tbody = document.querySelector("tbody");
+    tbody.innerHTML = ``;
     initialContent();
   }
 }

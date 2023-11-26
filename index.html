@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
   </head>
   <body>
     <div class="container">
@@ -20,26 +21,25 @@
         <a href="">
           <img src="./assets/menuh.svg" alt="" id="menu" class="" />
           <img src="./assets/menux.svg" alt="" id="menux" class="hidden" />
-          <div id="table" class="hidden">
-            <table>
-              <tbody>
-                <tr class="tbody-temp" class="">
-                  <td class="table">
-                    <a href="" target="_blank">
-                      <p>Você ainda não fez uma busca!</p>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div>
-              <p class="feedback">FeedBack</p>
-              <img src="" alt="" />
-            </div>
-          </div>
         </a>
+        <div class="container-table hidden">
+          <table id="table">
+            <tbody>
+              <tr class="tbody-temp">
+                <td class="table">
+                    <p class="info">Você ainda não fez uma busca!</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="feedback-container">
+            <p class="feedback">FeedBack</p>
+            <img src="/assets/mail.svg" alt="" id="mail"/>
+          </div>
+          <img src="../assets/geometric.svg" alt="" id="menu-open"/>
+        </div>
       </nav>
-      <img src="../assets/geometric.svg" alt="" id="menu-open" class="hidden" />
+
       <div id="app"></div>
     </div>
     <script type="module" src="./js/main.js"></script>

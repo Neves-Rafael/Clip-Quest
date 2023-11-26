@@ -92,6 +92,7 @@ export function teste(videoAqui) {
 
 document.getElementById("logo").addEventListener("click", () => {
   window.history.pushState({}, "", "/");
+  location.reload();
 });
 
 // Recarregamento lógica
@@ -99,3 +100,4 @@ if (performance.navigation.type === 1) {
   console.log("A página foi recarregada!!");
   window.history.pushState({}, "", "/");
 }
+
