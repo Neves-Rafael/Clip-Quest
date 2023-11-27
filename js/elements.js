@@ -114,7 +114,7 @@ function putImage() {
   setTimeout(() => {
     preview = document.querySelector(".preview");
     preview.src = `${dataImage.videos[count - 1].image}`;
-  }, 100);
+  }, 300);
 }
 
 function putVideo() {
@@ -123,7 +123,7 @@ function putVideo() {
       videoPlay = document.getElementById("video");
       videoPlay.src = `${dataVideo.videos[count - 1].video_files[0].link}`;
     }
-  }, 100);
+  }, 300);
 }
 
 document.getElementById("app").addEventListener("click", function (event) {

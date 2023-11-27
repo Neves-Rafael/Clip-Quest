@@ -35,6 +35,7 @@ export class TableView extends Table {
             <p class="count">Imagem 1</p>
           </a>
         </td>
+        
         <td class="author">
           <p><span>Autor:</span> Rafael Neves</p>
         </td>
