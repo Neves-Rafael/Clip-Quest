@@ -17,6 +17,7 @@ export class TableView extends Table {
       for (let i = 0; i <= 5; i++) {
         const row = this.createRow();
         row.querySelector(".table a").href = data.videos[i].user.url;
+        row.querySelector(".count").textContent = `Vídeo: ${i + 1}`;
         row.querySelector(
           ".author p"
         ).textContent = `Autor: ${data.videos[i].user.name}`;
@@ -32,14 +33,11 @@ export class TableView extends Table {
     tr.innerHTML = `
         <td class="table">
           <a href="" target="_blank">
-            <p>Imagem 1</p>
+            <p class="count">Imagem 1</p>
           </a>
         </td>
         <td class="author">
           <p><span>Autor:</span> Rafael Neves</p>
-        </td>
-        <td>
-          <button class="remove">&times;</button>
         </td>
         `;
     return tr;

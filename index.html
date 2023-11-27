@@ -13,6 +13,7 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/table.css" />
   </head>
   <body>
     <div class="container">
@@ -22,21 +23,23 @@
           <img src="./assets/menuh.svg" alt="" id="menu" class="" />
           <img src="./assets/menux.svg" alt="" id="menux" class="hidden" />
         </a>
-        <div class="container-table hidden">
-          <table id="table">
+        <div class="container-table">
+          <table id="table" class="hidden tabletemp">
             <tbody>
               <tr class="tbody-temp">
                 <td class="table">
-                    <p class="info">Você ainda não fez uma busca!</p>
+                  <p class="info">Você ainda não fez uma busca!</p>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="feedback-container">
-            <p class="feedback">FeedBack</p>
-            <img src="/assets/mail.svg" alt="" id="mail"/>
-          </div>
-          <img src="../assets/geometric.svg" alt="" id="menu-open"/>
+          <a href="mailto:nevesrafael.dev@gmail.com">
+            <div class="feedback-container invisible">
+              <p class="feedback">FeedBack</p>
+              <img src="/assets/mail.svg" alt="" id="mail" />
+            </div>
+          </a>
+          <img src="../assets/geometric.svg" alt="" id="menu-open" class="" />
         </div>
       </nav>
 

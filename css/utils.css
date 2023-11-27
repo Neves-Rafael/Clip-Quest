@@ -41,9 +41,8 @@
   } */
 
   /* Geometric animation */
-  #geometric {
+  /* #geometric {
     position: fixed;
-    z-index: 1;
   }
   
   #geometric.left {
@@ -94,4 +93,4 @@
     100% {
       transform: translateX(0%) scale(1) rotate(0deg);
     }
-  }
+  } */

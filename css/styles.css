@@ -173,6 +173,10 @@ nav {
   margin-bottom: 10rem;
 }
 
+.right {
+  transform: rotate(180deg);
+}
+
 /* #video {
   position: absolute;
   inset: 0;
@@ -186,13 +190,19 @@ nav {
   display: none;
 }
 
+.invisible {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 table .tbody-temp p {
   color: var(--white);
   font-size: 2rem;
   font-weight: 700;
 }
 
-table {
+.tabletemp {
   background-color: var(--bg-color);
   padding: 20rem 5rem;
 }
@@ -202,6 +212,7 @@ table {
   z-index: -1;
   right: -15%;
   top: 5%;
+  transform: scale(0);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -242,4 +253,21 @@ table {
   justify-content: end;
   padding-top: 5rem;
   gap: 2rem;
+}
+
+.preview {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.center-view {
+  z-index: -1;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
