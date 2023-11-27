@@ -9,13 +9,13 @@ router.add("/main", "./pages/main.html");
 router.add("/home", "./pages/home.html");
 router.add(404, "./pages/404.html");
 
-const activeRout = document.querySelectorAll("nav a");
+const activeRout = document.querySelectorAll("#logo, #menu, #menux");
 activeRout.forEach((element) => {
   element.addEventListener("click", (event) => {
     event.preventDefault();
-    window.history.pushState({}, "", event.target.href);
+    // window.history.pushState({}, "", event.target.href);
 
-    router.togglePage();
+    // router.togglePage();
   });
 });
 

@@ -1,6 +1,6 @@
 import * as utils from "./utils.js";
 import { Router } from "./router.js";
-import { callBackHoister, verifyPageNumber } from "./elements.js";
+import { verifyPageNumber } from "./elements.js";
 import { TableView } from "./table.js";
 const tableView = new TableView();
 
@@ -37,10 +37,7 @@ export class Request {
   }
 
   getVideo(data) {
-    const resultData = data.videos[0].video_files[0].link;
-    callBackHoister(resultData);
-    verifyPageNumber(data)
+    verifyPageNumber(data);
     tableView.tableContent(data);
   }
-
 }

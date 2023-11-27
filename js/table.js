@@ -1,5 +1,3 @@
-import { initialContent } from "./style.js";
-
 export class Table {
   constructor(root) {
     this.root = document.querySelector(root);
@@ -30,6 +28,7 @@ export class TableView extends Table {
 
   createRow() {
     const tr = document.createElement("tr");
+    tr.classList.add("tr-style");
     tr.innerHTML = `
         <td class="table">
           <a href="" target="_blank">
@@ -46,6 +45,5 @@ export class TableView extends Table {
   removeTr() {
     const tbody = document.querySelector("tbody");
     tbody.innerHTML = ``;
-    initialContent();
   }
 }

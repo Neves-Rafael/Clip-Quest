@@ -1,4 +1,4 @@
-import { capture, teste } from "./elements.js";
+import { capture } from "./elements.js";
 export class Router {
   routes = {};
 
@@ -9,14 +9,12 @@ export class Router {
   togglePage() {
     const { pathname } = window.location;
     const captureRoute = this.routes[pathname] || this.routes[404];
+    console.log(captureRoute)
 
     fetch(captureRoute)
       .then((data) => data.text())
       .then((html) => {
         document.getElementById("app").innerHTML = html;
-
-        let videoElement = document.getElementById("video");
-        teste(videoElement);
         capture();
       });
   }
