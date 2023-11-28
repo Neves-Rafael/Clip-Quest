@@ -109,7 +109,7 @@ export function putImage() {
   setTimeout(() => {
     preview = document.querySelector(".preview");
     preview.src = `${dataImage.videos[count - 1].image}`;
-  }, 300);
+  }, 500);
 }
 
 function putVideo() {
