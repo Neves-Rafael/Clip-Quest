@@ -14,7 +14,6 @@ export class Request {
     })
       .then((response) => response.json())
       .then((data) => {
-
         if (data.total_results < 5) {
           let router = new Router();
           window.history.pushState({}, "", "/404");
@@ -25,7 +24,7 @@ export class Request {
           this.getVideo(data);
         }
       })
-      .catch((error) => console.error("Erro:", error));
+      .catch((error) => {});
   }
 
   updateSearch() {

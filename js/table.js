@@ -21,9 +21,7 @@ export class TableView extends Table {
         ).textContent = `Autor: ${data.videos[i].user.name}`;
         this.tbody.append(row);
       }
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   }
 
   createRow() {

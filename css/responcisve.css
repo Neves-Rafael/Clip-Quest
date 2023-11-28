@@ -39,6 +39,10 @@
     top: 30%;
     left: 0;
   }
+
+  .page-number {
+    padding-bottom: 5%;
+  }
 }
 
 @media (min-width: 768px) {

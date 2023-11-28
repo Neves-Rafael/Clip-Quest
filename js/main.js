@@ -1,7 +1,7 @@
 import { Router } from "./router.js";
 import "./style.js";
 import "./table.js";
-import { putImage } from "./elements.js";
+import { putImage, putVideo } from "./elements.js";
 
 const router = new Router();
 
@@ -22,6 +22,7 @@ router.togglePage();
 window.onpopstate = () => {
   router.togglePage();
   putImage();
+  putVideo();
 };
 window.route = () => router.togglePage();
 

@@ -313,7 +313,7 @@ table .tbody-temp p {
 .right, .left {
   background: none;
   z-index: 5;
-  opacity: 0.5;
+  opacity: 0.2;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -334,6 +334,23 @@ table .tbody-temp p {
   transform: rotate(180deg) scale(1.2);
 }
 
-.page-number{
-  padding-bottom: 5%;
+.arrow-main {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-main button {
+  background-color: none;
+  background: none;
+  border: none;
+}
+
+.nav-main {
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-main:hover {
+  opacity: 1;
 }

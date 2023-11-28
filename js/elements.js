@@ -46,7 +46,6 @@ document.getElementById("logo").addEventListener("click", () => {
 
 // Recarregamento lógica
 if (performance.navigation.type === 1) {
-  console.log("A página foi recarregada!!");
   window.history.pushState({}, "", "/");
 }
 
@@ -112,11 +111,19 @@ export function putImage() {
   }, 500);
 }
 
-function putVideo() {
+export function putVideo() {
+  const logoMain = document.getElementById("logo");
+  const menuMain = document.getElementById("menu");
+
   setTimeout(() => {
     if (window.location.pathname === "/main") {
       videoPlay = document.getElementById("video");
       videoPlay.src = `${dataVideo.videos[count - 1].video_files[0].link}`;
+      logoMain.classList.add("nav-main");
+      menuMain.classList.add("nav-main");
+    }else {
+      logoMain.classList.remove("nav-main");
+      menuMain.classList.remove("nav-main");
     }
   }, 500);
 }
