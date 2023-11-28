@@ -30,7 +30,6 @@ document.body.addEventListener("click", function (event) {
       menuOpen.classList.add("animate");
     }, 1);
   } else {
-    // fechar se clicar fora do menu lateral
     menuOpen.classList.remove("animate");
     table.classList.add("hidden");
     menu.classList.remove("hidden");

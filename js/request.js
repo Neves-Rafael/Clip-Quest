@@ -14,7 +14,6 @@ export class Request {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
 
         if (data.total_results < 5) {
           let router = new Router();

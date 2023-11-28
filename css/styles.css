@@ -15,7 +15,6 @@
 }
 
 body {
-  /* height: 100vh; */
   background-color: var(--bg-color);
   font-size: 1.6rem;
   cursor: none;

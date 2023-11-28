@@ -53,7 +53,6 @@ if (performance.navigation.type === 1) {
 let count = 1;
 
 document.getElementById("app").addEventListener("click", function (event) {
-
   if (event.target && event.target.className === "left") {
     count--;
     verifyNumber();
@@ -72,7 +71,6 @@ document.getElementById("app").addEventListener("click", function (event) {
 });
 
 document.getElementById("app").addEventListener("click", function (event) {
-
   if (event.target && event.target.className === "left-video") {
     count--;
     verifyNumber();
@@ -140,4 +138,3 @@ document.getElementById("app").addEventListener("click", function (event) {
     request.search(valueButton);
   }
 });
-

@@ -21,14 +21,7 @@
     pointer-events: none;
 }
 
-/* html */
-
-/*  
-    <div class="cursor-dot"  data-cursor-dot></div>
-    <div class="cursor-dot-outline" data-cursor-outline></div>
-/* */ 
-
-/* .sr-only {
+.sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -38,59 +31,4 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-  } */
-
-  /* Geometric animation */
-  /* #geometric {
-    position: fixed;
   }
-  
-  #geometric.left {
-    left: auto;
-    animation: left 1s ease-in-out forwards;
-  }
-  
-  #geometric.right {
-    right: auto;
-    animation: right 1s ease-in-out forwards;
-  }
-  
-  #geometric.leftCenter {
-    left: auto;
-    animation: leftCenter 1s ease-in-out forwards;
-  }
-  
-  #geometric.rightCenter {
-    right: auto;
-    animation: rightCenter 1s ease-in-out forwards;
-  }
-  
-  @keyframes right {
-    100% {
-      transform: translateX(125%) scale(1.5) rotate(360deg);
-    }
-  }
-  
-  @keyframes left {
-    100% {
-      transform: translateX(-125%) scale(1.5) rotate(-360deg);
-    }
-  }
-  
-  @keyframes rightCenter {
-    0% {
-      transform: translateX(125%) scale(1.5) rotate(360deg);
-    }
-    100% {
-      transform: translateX(0%) scale(1) rotate(0deg);
-    }
-  }
-  
-  @keyframes leftCenter {
-    0% {
-      transform: translateX(-125%) scale(1.5) rotate(-360deg);
-    }
-    100% {
-      transform: translateX(0%) scale(1) rotate(0deg);
-    }
-  } */

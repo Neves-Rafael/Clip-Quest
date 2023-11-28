@@ -4,7 +4,6 @@ table * {
 }
 
 table th {
-  /* background: var(--primary-color); */
   text-align: left;
   font-weight: normal;
   padding: 1.5rem;

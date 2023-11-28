@@ -14,9 +14,6 @@ const activeRout = document.querySelectorAll("#logo, #menu, #menux");
 activeRout.forEach((element) => {
   element.addEventListener("click", (event) => {
     event.preventDefault();
-    // window.history.pushState({}, "", event.target.href);
-
-    // router.togglePage();
   });
 });
 
@@ -29,24 +26,21 @@ window.onpopstate = () => {
 window.route = () => router.togglePage();
 
 
-
-//cursor teste
-
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
 
 window.addEventListener("mousemove", (event) => {
-    const posX = event.clientX;
-    const posY = event.clientY;
+  const posX = event.clientX;
+  const posY = event.clientY;
 
-    cursorDot.style.left = `${posX}px`;
-    cursorDot.style.top = `${posY}px`;
+  cursorDot.style.left = `${posX}px`;
+  cursorDot.style.top = `${posY}px`;
 
-    // cursorOutline.style.left = `${posX}px`;
-    // cursorOutline.style.top = `${posY}px`;
-
-    cursorOutline.animate({
-        left: `${posX}px`,
-        top: `${posY}px`
-}, {duration: 500, fill: "forwards"})
-})
+  cursorOutline.animate(
+    {
+      left: `${posX}px`,
+      top: `${posY}px`,
+    },
+    { duration: 500, fill: "forwards" }
+  );
+});

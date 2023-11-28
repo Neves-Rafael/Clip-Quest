@@ -42,12 +42,9 @@
 }
 
 @media (min-width: 768px) {
-
-
   .arrow {
     position: fixed;
     top: 30%;
     left: 0;
   }
-  
 }
