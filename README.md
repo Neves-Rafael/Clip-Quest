@@ -1,9 +1,9 @@
-<h1 align="center">⏲📽️ ClipQuest</h1>
+<h1 align="center">📽️ ClipQuest</h1>
 
 ![image](https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/4e6b3ada-6616-4c44-8931-9040b5183f23)
 
 
-<p align="center">ClipQuest - É uma aplicação com o objetivo de permitir o usuário fazer uma busca por qualquer assunto e ter o retorno dos 5 mais bem avaliados vídeos do pexels!</p>
+<p align="center">ClipQuest - É um site com o objetivo de permitir o usuário fazer uma busca por qualquer assunto e ter o retorno dos 5 mais bem avaliados vídeos do pexels!</p>
 <br/>
 <br/>
 <p align="center">Os principais conceitos abordados são: consumo de Apis, estruturação em SPA e geração dinamica de html e css por parte do JavaScript.</p>
