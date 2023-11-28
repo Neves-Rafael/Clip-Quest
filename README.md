@@ -18,7 +18,7 @@
 <h3 align="center">⭐ Fazer uma busca personalizada sobre o que quiser!</h3>
 
 <p align="center">
-  <img width="700px" src="![search](https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/06ba3e8d-bba2-4894-8c95-d1487ff85e1c)">
+  <img width="700px" src="https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/06ba3e8d-bba2-4894-8c95-d1487ff85e1c">
 </p>
 
 <h3 align="center">⭐Ter acesso ao autor e ser redirecionado para o site do Pexels!</h3>
