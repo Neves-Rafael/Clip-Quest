@@ -17,7 +17,6 @@
 body {
   background-color: var(--bg-color);
   font-size: 1.6rem;
-  cursor: none;
 }
 
 #app {
