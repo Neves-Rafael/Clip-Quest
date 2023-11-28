@@ -18,17 +18,20 @@
 <h3 align="center">⭐ Fazer uma busca personalizada sobre o que quiser!</h3>
 
 <p align="center">
-  <img width="700px" src="https://github.com/Neves-Rafael/Focus-timer/assets/136202919/9cccf2d7-a7bb-4381-8374-535609bcdcf9">
+  <img width="700px" src="https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/58b6b9cd-646b-4c85-a5ae-08cb2af2b300
+">
 </p>
 
 <h3 align="center">⭐Ter acesso ao autor e ser redirecionado para o site do Pexels!</h3>
 <p align="center">
-  <img width="700px" src="https://github.com/Neves-Rafael/Focus-timer/assets/136202919/d685626d-3f14-41e7-8808-4a269c2624b5" >
+  <img width="700px" src="https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/ec73f2f6-34d5-4e87-a02a-09dc1ce156e3
+" >
 </p>
 
 <h3 align="center">⭐ Página de Error para auxiliar a busca!</h3>
 <p align="center">
-  <img width="700px" src="https://github.com/Neves-Rafael/Focus-timer/assets/136202919/c79d3ca6-f9e6-47b4-a809-7f33154f94da">
+  <img width="700px" src="https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/ff70129a-20ba-4d68-81de-de75bc2c11dc
+">
 </p>
 
 
