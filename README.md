@@ -18,21 +18,17 @@
 <h3 align="center">⭐ Fazer uma busca personalizada sobre o que quiser!</h3>
 
 <p align="center">
-  <img width="700px" src="![search](https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/06ba3e8d-bba2-4894-8c95-d1487ff85e1c)
-
-">
+  <img width="700px" src="![search](https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/06ba3e8d-bba2-4894-8c95-d1487ff85e1c)">
 </p>
 
 <h3 align="center">⭐Ter acesso ao autor e ser redirecionado para o site do Pexels!</h3>
 <p align="center">
-  <img width="700px" src="https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/ec73f2f6-34d5-4e87-a02a-09dc1ce156e3
-" >
+  <img width="700px" src="https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/ec73f2f6-34d5-4e87-a02a-09dc1ce156e3">
 </p>
 
 <h3 align="center">⭐ Página de Error para auxiliar a busca!</h3>
 <p align="center">
-  <img width="700px" src="https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/ff70129a-20ba-4d68-81de-de75bc2c11dc
-">
+  <img width="700px" src="https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/ff70129a-20ba-4d68-81de-de75bc2c11dc">
 </p>
 
 
