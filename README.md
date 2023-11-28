@@ -18,7 +18,8 @@
 <h3 align="center">⭐ Fazer uma busca personalizada sobre o que quiser!</h3>
 
 <p align="center">
-  <img width="700px" src="https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/58b6b9cd-646b-4c85-a5ae-08cb2af2b300
+  <img width="700px" src="![search](https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/06ba3e8d-bba2-4894-8c95-d1487ff85e1c)
+
 ">
 </p>
 
