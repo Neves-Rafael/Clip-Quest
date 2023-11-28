@@ -118,7 +118,7 @@ function putVideo() {
       videoPlay = document.getElementById("video");
       videoPlay.src = `${dataVideo.videos[count - 1].video_files[0].link}`;
     }
-  }, 300);
+  }, 500);
 }
 
 document.getElementById("app").addEventListener("click", function (event) {
