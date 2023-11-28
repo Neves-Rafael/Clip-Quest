@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+  :root {
+    font-size: 50%;
+  }
+
+  nav {
+    margin-top: 2rem;
+  }
+
+  #logo {
+    width: 7rem;
+  }
+
+  #table {
+    max-width: 35rem;
+    margin-left: 0;
+    margin-right: -10%;
+  }
+
+  #menu-open {
+    max-width: 70rem;
+    margin-right: 2rem;
+  }
+
+  .error404 h2 {
+    max-width: 90%;
+  }
+
+  div.home {
+    max-width: 90%;
+  }
+
+  .tabletemp {
+    padding: 4rem 2rem;
+  }
+
+  .arrow {
+    position: fixed;
+    top: 30%;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+
+
+  .arrow {
+    position: fixed;
+    top: 30%;
+    left: 0;
+  }
+  
+}

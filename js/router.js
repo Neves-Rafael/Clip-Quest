@@ -9,7 +9,6 @@ export class Router {
   togglePage() {
     const { pathname } = window.location;
     const captureRoute = this.routes[pathname] || this.routes[404];
-    console.log(captureRoute)
 
     fetch(captureRoute)
       .then((data) => data.text())

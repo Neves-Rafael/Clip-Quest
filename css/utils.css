@@ -1,12 +1,12 @@
-/* .cursor-dot {
-    height: 5px;
-    width: 5px;
-    background: white;
+.cursor-dot {
+    height: 15px;
+    width: 15px;
+    background: var(--orange-500);
 }
 
 .cursor-dot-outline {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     border: 2px solid hsla(0, 0%, 100%, 0.5);
 }
 
@@ -19,14 +19,14 @@
     border-radius: 50%;
     z-index: 1;
     pointer-events: none;
-} */
+}
 
 /* html */
 
 /*  
     <div class="cursor-dot"  data-cursor-dot></div>
     <div class="cursor-dot-outline" data-cursor-outline></div>
-*/
+/* */ 
 
 /* .sr-only {
     position: absolute;

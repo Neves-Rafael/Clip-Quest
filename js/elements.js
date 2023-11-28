@@ -53,7 +53,6 @@ if (performance.navigation.type === 1) {
 let count = 1;
 
 document.getElementById("app").addEventListener("click", function (event) {
-  console.log(count);
 
   if (event.target && event.target.className === "left") {
     count--;
@@ -69,12 +68,10 @@ document.getElementById("app").addEventListener("click", function (event) {
     putImage();
     const pageNumber = document.querySelector(".page-number");
     pageNumber.textContent = `${count}/5`;
-    console.log(count);
   }
 });
 
 document.getElementById("app").addEventListener("click", function (event) {
-  console.log(count);
 
   if (event.target && event.target.className === "left-video") {
     count--;
@@ -110,7 +107,7 @@ export function verifyPageNumber(data) {
 let preview;
 let videoPlay;
 
-function putImage() {
+export function putImage() {
   setTimeout(() => {
     preview = document.querySelector(".preview");
     preview.src = `${dataImage.videos[count - 1].image}`;
@@ -129,7 +126,6 @@ function putVideo() {
 document.getElementById("app").addEventListener("click", function (event) {
   if (event.target && event.target.id === "play") {
     putVideo();
-    console.log("play");
     window.history.pushState({}, "", "/main");
     const router = new Router();
     router.add("/main", "./pages/main.html");
@@ -140,8 +136,8 @@ document.getElementById("app").addEventListener("click", function (event) {
 let valueButton = "";
 document.getElementById("app").addEventListener("click", function (event) {
   if (event.target && event.target.className === "404-search") {
-    console.log("button Error");
     valueButton = event.target.textContent;
     request.search(valueButton);
   }
 });
+

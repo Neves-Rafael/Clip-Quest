@@ -1,6 +1,7 @@
 import { Router } from "./router.js";
-import "./style.js"
-import "./table.js"
+import "./style.js";
+import "./table.js";
+import { putImage } from "./elements.js";
 
 const router = new Router();
 
@@ -21,37 +22,31 @@ activeRout.forEach((element) => {
 
 router.togglePage();
 
-window.onpopstate = () => router.togglePage();
+window.onpopstate = () => {
+  router.togglePage();
+  putImage();
+};
 window.route = () => router.togglePage();
 
-//caso tenha imagem utilizar a seguinte abordagem
 
-// const activeRoutImg = document.getElementById("");
-// activeRoutImg.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   window.history.pushState({}, "", event.target.getAtribute("href"));
-// })
-
-// ------------------------------------------------------
 
 //cursor teste
 
-// const cursorDot = document.querySelector("[data-cursor-dot]");
-// const cursorOutline = document.querySelector("[data-cursor-outline]");
+const cursorDot = document.querySelector("[data-cursor-dot]");
+const cursorOutline = document.querySelector("[data-cursor-outline]");
 
-// window.addEventListener("mousemove", (event) => {
-//     const posX = event.clientX;
-//     const posY = event.clientY;
+window.addEventListener("mousemove", (event) => {
+    const posX = event.clientX;
+    const posY = event.clientY;
 
-//     cursorDot.style.left = `${posX}px`;
-//     cursorDot.style.top = `${posY}px`;
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
 
-//     // cursorOutline.style.left = `${posX}px`;
-//     // cursorOutline.style.top = `${posY}px`;
+    // cursorOutline.style.left = `${posX}px`;
+    // cursorOutline.style.top = `${posY}px`;
 
-//     cursorOutline.animate({
-//         left: `${posX}px`,
-//         top: `${posY}px`
-// }, {duration: 500, fill: "forwards"})
-// })
-
+    cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+}, {duration: 500, fill: "forwards"})
+})

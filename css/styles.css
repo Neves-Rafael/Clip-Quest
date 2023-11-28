@@ -18,6 +18,7 @@ body {
   /* height: 100vh; */
   background-color: var(--bg-color);
   font-size: 1.6rem;
+  cursor: none;
 }
 
 #app {
@@ -199,8 +200,8 @@ nav {
   margin-bottom: 10rem;
 }
 
-.right{
-  transform: rotate(90deg);
+.right {
+  transform: rotate(180deg);
 }
 
 .hidden {
@@ -281,7 +282,6 @@ table .tbody-temp p {
 .center-view {
   z-index: -1;
   width: 100%;
-  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -310,9 +310,9 @@ table .tbody-temp p {
   border: none;
 }
 
-
 .left-video,
-.right-video {
+.right-video,
+.right, .left {
   background: none;
   z-index: 5;
   opacity: 0.5;
@@ -320,15 +320,18 @@ table .tbody-temp p {
   cursor: pointer;
 }
 
-.right-video {
+.right-video,
+.right {
   transform: rotate(180deg);
 }
 
-.left-video:hover{
+.left-video:hover,
+.left:hover {
   opacity: 1;
   transform: scale(1.2);
 }
-.right-video:hover {
+.right-video:hover,
+.right:hover {
   opacity: 1;
   transform: rotate(180deg) scale(1.2);
 }
