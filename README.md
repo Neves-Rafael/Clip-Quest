@@ -1,6 +1,6 @@
 <h1 align="center">📽️ ClipQuest</h1>
 
-![image]((https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/63a04561-01a8-4306-bb08-ffbf142b814b)
+![image](https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/63a04561-01a8-4306-bb08-ffbf142b814b)
 )
 
 
