@@ -1,7 +1,6 @@
 <h1 align="center">📽️ ClipQuest</h1>
 
 ![image](https://github.com/Neves-Rafael/Clip-Quest/assets/136202919/63a04561-01a8-4306-bb08-ffbf142b814b)
-)
 
 
 <p align="center">ClipQuest - É um site com o objetivo de permitir o usuário fazer uma busca por qualquer assunto e ter o retorno dos 5 mais bem avaliados vídeos do pexels!</p>
