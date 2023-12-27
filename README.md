@@ -9,7 +9,8 @@
 <br/>
 <p align="center">Os principais conceitos abordados são: consumo de Apis, estruturação em SPA e geração dinamica de html e css por parte do JavaScript.</p>
 <br/>
-
+<p align="center">Projeto desenvolvido durante o curso <strong>Explorer</strong> oferecida pela <a href="https://app.rocketseat.com.br/">RocketSeat</a>.<br/>
+<br/>
 
 
 
