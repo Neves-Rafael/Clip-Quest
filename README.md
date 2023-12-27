@@ -48,7 +48,7 @@ Além disto é bom ter um editor para trabalhar com o código como <a href="http
 ```bash
 # Clone este repositório
 $ git clone https://github.com/Neves-Rafael/Focus-timer
-$ npm install lite-server
+$ 
 $ configure o package.json para utilizar o lite-server
 
 # Execute em qualquer navegador
